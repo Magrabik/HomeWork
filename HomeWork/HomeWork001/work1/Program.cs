@@ -5,19 +5,19 @@
 // a = -9 b = -3 -> max = -3
 
 System.Console.WriteLine("Введите первое число");
-string num1 = Console.ReadLine();
-int a = Convert.ToInt32(num1);
+string volue1 = Console.ReadLine();
+int a = Convert.ToInt32(volue1);
 
 System.Console.WriteLine("Введите второе число");
-string num2 = Console.ReadLine();
-int b = Convert.ToInt32(num2);
+string volue2 = Console.ReadLine();
+int b = Convert.ToInt32(volue2);
 
 if(a>b)
 {
-    Console.WriteLine("max = a");
+    Console.WriteLine(volue1);
 }
 
 if(a<b)
 {
-   Console.WriteLine("max = b");
+   Console.WriteLine(volue2);
 }
