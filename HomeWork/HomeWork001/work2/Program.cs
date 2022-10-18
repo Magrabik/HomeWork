@@ -1,24 +1,24 @@
 ﻿System.Console.WriteLine("Введите первое число");
-string volue1 = Console.ReadLine();
-int a = Convert.ToInt32(volue1);
+string vol1 = Console.ReadLine();
+int a = Convert.ToInt32(vol1);
 
 System.Console.WriteLine("Введите второе число");
-string volue2 = Console.ReadLine();
-int b = Convert.ToInt32(volue2);
+string vol2 = Console.ReadLine();
+int b = Convert.ToInt32(vol2);
 
-System.Console.WriteLine("Введите второе число");
-string volue3 = Console.ReadLine();
-int c = Convert.ToInt32(volue3);
+System.Console.WriteLine("Введите третье число");
+string vol3 = Console.ReadLine();
+int c = Convert.ToInt32(vol3);
 
-if(a>b<c == a)
+if (a < b && b < c)
 {
-    System.Console.WriteLine(volue1);
+    System.Console.WriteLine(c);
 }
-if(b>c<a == b)
+if (a < b && b > c) 
 {
-    System.Console.WriteLine(volue2);
+    System.Console.WriteLine(b);
 }
-if(c>b<a == c)
+if(a>b && b>c)
 {
-    System.Console.WriteLine(volue3);
+    System.Console.WriteLine(a);
 }
