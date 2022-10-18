@@ -14,10 +14,12 @@ int b = Convert.ToInt32(volue2);
 
 if(a>b)
 {
-    Console.WriteLine(volue1);
+    Console.WriteLine($"{volue1} max");
+    System.Console.WriteLine($"{volue2} min");
 }
 
 if(a<b)
 {
-   Console.WriteLine(volue2);
+   Console.WriteLine($"{volue1} min");
+    System.Console.WriteLine($"{volue2} max");
 }
