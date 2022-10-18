@@ -14,11 +14,11 @@ if (a < b && b < c)
 {
     System.Console.WriteLine(c);
 }
-if (a < b && b > c) 
+if (a < b && b > c)
 {
     System.Console.WriteLine(b);
 }
-if(a>b && b>c)
+if (a > b && b > c)
 {
     System.Console.WriteLine(a);
 }
