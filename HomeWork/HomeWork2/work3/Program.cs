@@ -1,31 +1,42 @@
-﻿// Задача 3: Напишите программу, 
+﻿
+// Задача 3: Напишите программу, 
 // которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. Не использовать строки для расчета.
 
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 326792 -> 6
 
-int Prompt(string message)
+int number = ReadInt("Введите число ");
+int count = number.ToString().Length;
+System.Console.WriteLine(MakeArray(number, count));
+
+
+
+
+
+int ReadInt(string massage)
 {
-     System.Console.WriteLine(message);
-     int number = Convert.ToInt32(Console.ReadLine());
-     return number;
+    System.Console.WriteLine(massage);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
-
-bool ValidateNumber(int number)
+int MakeArray(int a, int b)
 {
-     if (number < 100 || number >= 1000)
-     {
-          System.Console.WriteLine("Это число не трехзначное");
-          return false;
-     }
-     return true;
-}
+int result = 0;
+    if (b < 3)
+    {
+        System.Console.WriteLine("Третей цифры нет ");
+    }
+    else
+    {
+        int c = 1;
+        for (int i = b; i > 3; i--)
+        {
+            c = c * 10;
+        }
+        result = (a / c) % 10;
 
-int number = Prompt("Введите трехзначное число: ");
-if(ValidateNumber(number))
-{
-     int lastDigit = number % 10;
-     System.Console.WriteLine($"Последняя цифра числа {number} равна {lastDigit}");
+
+    }
+    return result;
 }
