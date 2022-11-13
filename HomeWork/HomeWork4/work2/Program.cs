@@ -30,6 +30,6 @@ void SumOfDigits(int intN)
     System.Console.WriteLine(result);
 }
 
-System.Console.WriteLine("Данная программа принимает принимает на вход число и выдаёт сумму цифр в числе.");
+System.Console.WriteLine("Данная программа принимает на вход число и выдаёт сумму цифр в числе.");
 int intN = PromptInt("Введите положительное целое число: ");
 SumOfDigits(intN);
